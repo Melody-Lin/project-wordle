@@ -21,7 +21,7 @@ function Game() {
 
   function handleSubmitGuess(tentativeGuess) {
     const nextGuesses = [...guesses, tentativeGuess];
-    setGuesses([...guesses, tentativeGuess]);
+    setGuesses(nextGuesses);
 
     if (tentativeGuess.toUpperCase() === answer) {
       setGameStatus('won');

@@ -231,6 +231,10 @@ h1 {
   color: white;
 }
 
+.restart-button {
+  text-decoration: underline;
+}
+
 /*
   Modal styles
 

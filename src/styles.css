@@ -196,6 +196,41 @@ h1 {
   border: 0;
 }
 
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.keyboard .letter {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  display: grid;
+  place-content: center;
+  background: var(--color-gray-700);
+  font-weight: 600;
+}
+
+.keyboard .letter.correct {
+  background: var(--color-success);
+  color: white;
+}
+.keyboard .letter.incorrect {
+  background: var(--color-gray-300);
+  color: white;
+}
+.keyboard .letter.misplaced {
+  background: var(--color-warning);
+  color: white;
+}
+
 /*
   Modal styles
 
